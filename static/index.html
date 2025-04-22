@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Broadcaster</title>
+  </head>
+  <body>
+    <div>
+      <div class="button">
+        <button onclick="startBroadcast()">List Devices</button>
+        <button onclick="startBroadcast()">Start Stream</button>
+        <button onclick="startBroadcast()">Stop Stream</button>
+      </div>
+      <div>
+        <label for="camera">Choose Camera</label>
+        <select id="camera"></select>
+        <label for="fps">FPS</label>
+        <input type="number" min="1" max="60" id="fps" value="15" />
+
+        <label for="blur">Blur Strength (odd number)</label>
+        <input type="range" min="1" max="52" id="blur" value="10" />
+
+        <label for="background">Background </label>
+        <select id="background">
+          <option value="none">No Background</option>
+          <option value="blur">Blur Background</option>
+          <option value="default">Default Background</option>
+        </select>
+      </div>
+    </div>
+  </body>
+</html>
